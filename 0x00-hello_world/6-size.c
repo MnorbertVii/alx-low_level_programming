@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - Entry of the function
  *
