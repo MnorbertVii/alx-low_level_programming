@@ -4,12 +4,10 @@
  */
 void print_alphabet(void)
 {
-	char alphbt;
+	char c;
 
-	alphbt = 'a';
+	for (c = 'a'; c <= 'z'; c++)
+		_putchar(c);
 
-	while (alphbt <= 'z')
-		_putchar(alphbt);
-		alphbt++;
-		_putchar('\n');
+	_putchar('\n')
 }
