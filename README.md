@@ -1,1 +1,1 @@
-Static libraries
+low level programming using C language
