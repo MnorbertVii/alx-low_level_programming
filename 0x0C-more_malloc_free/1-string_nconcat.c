@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * string_nconcat - a concatenates two strings.
+ * string_nconcat - concatenates two strings.
  *
- * @s1: first chararacter
+ * @s1: first charater
  * @s2: secound character
  * @n: unsigned int
  *
- * Return: NULL if the function fails
+ * Return: NULL if the function fails.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -29,7 +29,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	else
 	{
-		for (b = 0; s2[b]; b++)
+		for (b = 0; s2[b]; ++b)
 		;
 	}
 	if (b > n)
@@ -42,5 +42,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (c = 0; c < b; c++)
 		str[c + a] = s2[c];
 	str[a + b] = '\0';
-        return (str);
+	return (str);
 }
